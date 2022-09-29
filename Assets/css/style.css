@@ -10,6 +10,10 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Cabeçalho */
 
 .cabecalho {
@@ -103,4 +107,158 @@ body {
 }
 
 /* Seção Star Wars */
+
+.produtos {
+  margin-top: 64px;
+}
+
+.topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 152px;
+  margin-right: 155px;
+}
+
+.topo h2 {
+  font-size: 32px;
+  color: #464646;
+}
+
+.topo a {
+  text-decoration: none;
+  color: #2a7ae4;
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.topo a img {
+  margin-left: 5px;
+}
+
+.box__produtos {
+  margin-left: 152px;
+  margin-right: 155px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container__produtos {
+  margin-top: 16px;
+}
+
+.img__produto img {
+  width: 176px;
+  height: 174px;
+  background-size: cover;
+}
+
+.info__produto {
+  margin-top: 8px;
+}
+
+.info__produto p {
+  margin: 8px 0;
+  color: #464646;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.info__produto a {
+  color: #2a7ae4;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Footer */
+
+.rodape {
+  background-color: #eaf2fd;
+  margin-top: 64px;
+  width: 1440px;
+}
+
+.rodape__container {
+  margin: 64px 155px 0 152px;
+  display: flex;
+  justify-content: space-between;
+  padding: 64px 0;
+}
+
+.rodape__itens {
+  list-style: none;
+}
+
+.rodape__links a {
+  font-size: 1rem;
+  color: #464646;
+  line-height: 2.5;
+}
+
+.rodape__contato {
+  display: flex;
+  flex-direction: column;
+}
+
+.rodape__contato h2 {
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 2;
+  color: #464646;
+}
+
+.rodape__contato .name {
+  width: 560px;
+  height: 56px;
+  margin-bottom: 16px;
+  background: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+.rodape__contato .name::placeholder {
+  font-size: 1rem;
+  font-family: 'Raleway';
+  padding: 10px 0 0 5px;
+}
+
+.rodape__contato textarea {
+  border: none;
+  border-radius: 5px;
+  height: 82px;
+  padding: 0 10px;
+}
+
+.rodape__contato textarea::placeholder {
+  font-size: 1rem;
+  font-family: 'Raleway';
+  padding: 10px 0 0 5px;
+}
+
+.rodape__contato .btn {
+  margin-top: 8px;
+  padding: 16px;
+  width: 165px;
+  height: 51px;
+  color: white;
+  background: #2a7ae4;
+  border: none;
+  transition: .3s;
+}
+.rodape__contato .btn:hover {
+  background-color: #D4E4FA;
+  color: #2a7ae4;
+  font-weight: 600;
+}
+
+.rodape__copyright {
+  background-color: white;
+  text-align: center;
+  padding: 32px;
+  font-size: 1.2rem;
+  font-family: 'Raleway';
+}
 

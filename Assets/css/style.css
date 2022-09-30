@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +8,7 @@
 
 body {
   max-width: 1440px;
+  width: 100%;
   margin: auto;
   font-family: 'Raleway', sans-serif;
 }
@@ -105,7 +108,6 @@ a {
   color: #2a7ae4;
   font-weight: 600;
 }
-
 /* Seção Star Wars */
 
 .produtos {
@@ -117,7 +119,7 @@ a {
   align-items: center;
   justify-content: space-between;
   margin-left: 152px;
-  margin-right: 155px;
+  margin-right: 152px;
 }
 
 .topo h2 {
@@ -140,7 +142,7 @@ a {
 
 .box__produtos {
   margin-left: 152px;
-  margin-right: 155px;
+  margin-right: 152px;
   display: flex;
   justify-content: space-between;
 }
@@ -148,15 +150,14 @@ a {
 .container__produtos {
   margin-top: 16px;
 }
+.info__produto {
+  margin-top: 8px;
+}
 
 .img__produto img {
   width: 176px;
   height: 174px;
   background-size: cover;
-}
-
-.info__produto {
-  margin-top: 8px;
 }
 
 .info__produto p {
@@ -195,6 +196,11 @@ a {
   font-size: 1rem;
   color: #464646;
   line-height: 2.5;
+}
+
+.rodape__links a:hover {
+  text-decoration: underline;
+  filter: brightness(2);
 }
 
 .rodape__contato {
@@ -246,10 +252,10 @@ a {
   color: white;
   background: #2a7ae4;
   border: none;
-  transition: .3s;
+  transition: 0.3s;
 }
 .rodape__contato .btn:hover {
-  background-color: #D4E4FA;
+  background-color: #d4e4fa;
   color: #2a7ae4;
   font-weight: 600;
 }
@@ -262,3 +268,115 @@ a {
   font-family: 'Raleway';
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+ 
+  /* Header */
+
+  .cabecalho {
+    margin: 0 32px;
+  }
+
+  .cabecalho__logo {
+    width: 150px;
+    height: 50px;
+  }
+
+  .cabecalho__pesquisa {
+    width: 280px;
+    height: 40px;
+  }
+
+  .cabecalho__botao {
+    width: 166px;
+    height: 40px;
+    padding: 10px;
+  }
+
+  /* Banner */
+
+  .banner {
+    width: auto;
+    background-position: center;
+  }
+
+  .banner__texto-promo {
+    margin-left: 32px;
+  }
+
+  .banner__texto-promo a {
+    width: 119px;
+    height: 40px;
+    padding: 10px;
+  }
+
+  /* Produtos */
+
+  .topo {
+    margin: 0 32px;
+  }
+
+  .topo h2 {
+    font-size: 22px;
+  }
+
+  .box__produtos {
+    margin: 0 32px;
+    /* gap: 16px; */
+  }
+
+  .container__produtos {
+    width: 164px;
+    height: 252px;
+    margin-right: 16px;
+  }
+
+  .container__produtos:nth-child(5) {
+    display: none;
+  }
+
+  .container__produtos:last-child {
+    display: none;
+  }
+
+  /* Footer */
+
+  .rodape {
+    width: auto;
+  }
+
+  .rodape__container {
+    width: auto;
+    margin: 32px;
+    padding:32px 0;
+    display: grid;
+    grid-template-areas: 
+        "logo contato"
+        "links contato";
+    grid-template-columns: 1fr 2fr;
+    column-gap: 3em;
+    /* padding: 2em; */
+  }
+
+  .rodape__logo {
+    grid-area: logo;
+  }
+
+  .rodape__menu {
+    grid-area: links;
+    text-align: left;
+  }
+
+  .rodape__contato {
+    grid-area: contato;
+  }
+
+  .rodape__contato .name,
+  textarea {
+    width: 434px;
+  }
+
+  .rodape__copyright {
+    font-size: 1rem;
+  }
+
+} 

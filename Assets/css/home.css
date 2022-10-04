@@ -27,18 +27,20 @@ body {
   margin: auto; */
 }
 
+a {
+  text-decoration: none;
+
+}
+
 .botao-primario {
   background-color: var(--azul);
   color: var(--branco);
   border: none;
   padding: 1rem;
+  cursor: pointer;
 }
 
 .botao-primario:hover {
-  background-color: var(--azul-dois);
-}
-
-.botao-secundario {
   background-color: var(--azul-dois);
 }
 
@@ -47,11 +49,17 @@ body {
   color: var(--azul);
   padding: 0.8rem 3.2rem;
   border: 1px solid var(--azul);
+  cursor: pointer;
 }
 
 .botao-secundario:hover {
   background-color: var(--azul-claro);
 }
+
+.botao-secundario a {
+  color: var(--azul);
+}
+
 
 /* Header */
 
